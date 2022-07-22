@@ -7,14 +7,52 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Wayfaring Coder</title>
+        <title>Samruddhi Somani</title>
         <meta name="description" content="Learn more about Samruddhi Somani." />
       </Head>
 
       <header>
-        <h1 className={styles.title}>Wayfaring Coder</h1>
+        <h1 className={styles.title}>Samruddhi Somani</h1>
       </header>
+      {/*       <nav>
+        <ul>
+          <li>Résumé</li>
+          <li>Portfolio</li>
+        </ul>
+      </nav> */}
       <main className={styles.main}>
+        <div className={styles.content}>
+          <p>
+            As the world goes digital, data abounds, and along with it, the need
+            for data storytellers. I have six years of experience using a
+            variety of tools and techniques to analyze datasets of all sizes and
+            surface data-driven insights and concrete actionable
+            recommendations. My professional experience across industries,
+            departments, and company sizes has honed my ability to quickly skill
+            up and deliver tangible value.
+          </p>
+          <p>
+            I have used tools like Python, R, SQL, JavaScript, and Tableau and
+            techniques like A/B testing, clustering, regression analysis, and
+            time-series forecasting to derive analyses that were shared with
+            stakeholders across cross-functional teams with diverse backgrounds.
+            I have also professionally built automatically updating daily
+            dashboards and reports, streamlined operational processes across
+            different teams, and designed efficient algorithms to optimize
+            business KPIs. While I currently work with digital marketing data, I
+            have worked with CRM data, medical records, and financial data in
+            the past.
+          </p>
+
+          <div className={styles.explore}>
+            <a href="https://www.linkedin.com/in/samruddhisomani/">
+              <button className={styles.card}>Find me on LinkedIn.</button>
+            </a>
+            <a href="/Samruddhi Somani Resume.pdf">
+              <button className={styles.card}>Check out my résumé. </button>
+            </a>
+          </div>
+        </div>
         {/*
         <p className={styles.description}>
           Get started by editing{" "}
