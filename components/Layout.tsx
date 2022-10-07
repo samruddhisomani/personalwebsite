@@ -9,14 +9,19 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <Head>
         <title>Samruddhi Somani</title>
-        <meta name="description" content="Learn more about Samruddhi Somani." />
+        <meta
+          name="description"
+          content="Learn more about my background, skills, and experiences. Or contact me about potential new projects or opportunities."
+        />
       </Head>
 
       <header>
-        <h1 className={styles.title}>Samruddhi Somani</h1>
+        <h1 className={styles.runner}>
+          <Link href="/"> Samruddhi Somani</Link>
+        </h1>
       </header>
       <nav>
         <ul className={styles.navigation}>
@@ -34,8 +39,12 @@ export default function Layout({ children }: LayoutProps) {
           </li>
         </ul>
       </nav>
-
-      <main> {children}</main>
+      {children}
+      <footer>
+        <h1 className={[styles.runner, styles.footer].join(" ")}>
+          <Link href="contact-me">Contact Me!</Link>
+        </h1>
+      </footer>
     </div>
   );
 }
