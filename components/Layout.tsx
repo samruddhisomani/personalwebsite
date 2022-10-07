@@ -12,11 +12,16 @@ export default function Layout({ children }: LayoutProps) {
     <div className={styles.container}>
       <Head>
         <title>Samruddhi Somani</title>
-        <meta name="description" content="Learn more about Samruddhi Somani." />
+        <meta
+          name="description"
+          content="Learn more about my background, skills, and experiences. Or contact me about potential new projects or opportunities."
+        />
       </Head>
 
       <header>
-        <h1 className={styles.title}>Samruddhi Somani</h1>
+        <h1 className={styles.runner}>
+          <Link href="/"> Samruddhi Somani</Link>
+        </h1>
       </header>
       <nav>
         <ul className={styles.navigation}>
@@ -36,6 +41,11 @@ export default function Layout({ children }: LayoutProps) {
       </nav>
 
       <main> {children}</main>
+      <footer>
+        <h1 className={styles.runner}>
+          <Link href="contact-me">Contact Me!</Link>
+        </h1>
+      </footer>
     </div>
   );
 }
