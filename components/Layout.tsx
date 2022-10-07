@@ -1,8 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import * as React from "react";
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
       <Head>
