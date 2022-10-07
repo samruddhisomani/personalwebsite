@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush");
+
 .container {
   padding: 0 2rem;
 }
@@ -64,7 +66,11 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  color:hotpink;
+  color:#f869f5;
+  background: rgb(60,53,208);
+  background: linear-gradient(0deg, rgba(60,53,208,1) 0%, rgba(25,12,125,1) 100%);
+  padding:0.5em;
+  font-family: 'Alex Brush',sans-serif;
 }
 
 .title,
