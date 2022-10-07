@@ -6,14 +6,6 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Samruddhi Somani</title>
-        <meta name="description" content="Learn more about Samruddhi Somani." />
-      </Head>
-
-      <header>
-        <h1 className={styles.title}>Samruddhi Somani</h1>
-      </header>
       {/*       <nav>
         <ul>
           <li>Résumé</li>
