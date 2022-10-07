@@ -6,14 +6,6 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Samruddhi Somani</title>
-        <meta name="description" content="Learn more about Samruddhi Somani." />
-      </Head>
-
-      <header>
-        <h1 className={styles.title}>Samruddhi Somani</h1>
-      </header>
       {/*       <nav>
         <ul>
           <li>Résumé</li>
@@ -43,15 +35,6 @@ const Home: NextPage = () => {
             have worked with CRM data, medical records, and financial data in
             the past.
           </p>
-
-          <div className={styles.explore}>
-            <a href="https://www.linkedin.com/in/samruddhisomani/">
-              <button className={styles.card}>Find me on LinkedIn.</button>
-            </a>
-            <a href="/Samruddhi Somani Resume.pdf">
-              <button className={styles.card}>Check out my résumé. </button>
-            </a>
-          </div>
         </div>
         {/*
         <p className={styles.description}>
