@@ -2,10 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam");
 @import url("https://fonts.googleapis.com/css2?family=Courgette");
 
-.container {
+/* .container {
   padding: 0 0;
   width: 100%;
   max-width: 1500px;
+} */
+
+.wrapper {
+  padding: 0 0;
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 1000px;
 }
 
 /* .main{
@@ -49,6 +59,10 @@
 
 .contactMeFormSubmit {
   max-width: 100px;
+}
+
+.footer {
+  align-self: flex-end;
 }
 
 /* .div1 {

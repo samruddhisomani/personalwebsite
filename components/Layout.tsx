@@ -9,7 +9,7 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <Head>
         <title>Samruddhi Somani</title>
         <meta
@@ -39,10 +39,9 @@ export default function Layout({ children }: LayoutProps) {
           </li>
         </ul>
       </nav>
-
-      <main> {children}</main>
+      {children}
       <footer>
-        <h1 className={styles.runner}>
+        <h1 className={[styles.runner, styles.footer].join(" ")}>
           <Link href="contact-me">Contact Me!</Link>
         </h1>
       </footer>
