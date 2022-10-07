@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush");
+@import url("https://fonts.googleapis.com/css2?family=Kalam");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker");
 
 .container {
   padding: 0 2rem;
@@ -35,6 +37,24 @@
   font-size: 3.5rem;
 }
 
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(60,53,208,1);
+  margin:auto;
+  padding:0 0 1em 0;
+}
+
+.navigation>li{
+  list-style-type:none;
+  color:#f869f5;
+  padding:0em 1em;
+  font-family:'Kalam', sans-serif;
+  font-size:1em;
+}
+
 /* .footer {
   display: flex;
   flex: 1;
@@ -67,7 +87,6 @@
   line-height: 1.15;
   font-size: 4rem;
   color:#f869f5;
-  background: rgb(60,53,208);
   background: linear-gradient(0deg, rgba(60,53,208,1) 0%, rgba(25,12,125,1) 100%);
   padding:0.5em;
   font-family: 'Alex Brush',sans-serif;
