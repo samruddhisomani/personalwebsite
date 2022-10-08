@@ -5,11 +5,12 @@ export default function ContactMe() {
     <div>
       <form
         className={styles.contactme}
-        //data-netflify="true"
-        name="contactMe"
+        data-netflify="true"
+        name="contact"
         method="POST"
         action="/success"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Name</label>
         <input name="name" type="text" required></input>
         <label htmlFor="email">Email</label>
