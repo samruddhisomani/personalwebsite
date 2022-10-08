@@ -5,7 +5,7 @@ export default function ContactMe() {
     <div>
       <form
         className={styles.contactme}
-        data-netflify="true"
+        data-netlify="true"
         name="contact"
         method="POST"
         action="/success"
