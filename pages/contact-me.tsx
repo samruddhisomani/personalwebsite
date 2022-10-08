@@ -6,11 +6,12 @@ export default function ContactMe() {
       <form
         className={styles.contactme}
         data-netflify="true"
-        name="contactMe"
         method="POST"
         action="/success"
         data-netlify-recaptcha="true"
+        name="contactme"
       >
+        <input name="form-name" value="contactme" type="hidden" />
         <label htmlFor="name">Name</label>
         <input name="name" type="text" required></input>
         <label htmlFor="email">Email</label>
