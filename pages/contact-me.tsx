@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 
 export default function ContactMe() {
   return (
-    <div>
+    <main className={styles.main}>
       <form
         className={styles.contactme}
         data-netlify="true"
@@ -25,6 +25,6 @@ export default function ContactMe() {
           Submit
         </button>
       </form>
-    </div>
+    </main>
   );
 }
