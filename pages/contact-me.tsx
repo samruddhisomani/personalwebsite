@@ -5,10 +5,11 @@ export default function ContactMe() {
     <div>
       <form
         className={styles.contactme}
-        //data-netflify="true"
+        data-netflify="true"
         name="contactMe"
         method="POST"
         action="/success"
+        data-netlify-recaptcha="true"
       >
         <label htmlFor="name">Name</label>
         <input name="name" type="text" required></input>
@@ -20,6 +21,7 @@ export default function ContactMe() {
           name="message"
           required
         ></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" className={styles.contactMeFormSubmit}>
           Submit
         </button>
@@ -27,6 +29,3 @@ export default function ContactMe() {
     </div>
   );
 }
-
-//<label for="name">Name</label>
-//<input name="name" type="text">
