@@ -27,6 +27,3 @@ export default function ContactMe() {
     </div>
   );
 }
-
-//<label for="name">Name</label>
-//<input name="name" type="text">
