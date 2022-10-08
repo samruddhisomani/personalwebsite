@@ -9,8 +9,6 @@ export default function ContactMe() {
         name="contact"
         method="POST"
         action="/success"
-        netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Name</label>
@@ -23,13 +21,6 @@ export default function ContactMe() {
           name="message"
           required
         ></textarea>
-        <div style={{ display: "none" }}>
-          <label htmlFor="bot-field">
-            Don’t fill this out if you’re human:
-          </label>
-          <input type="hidden" name="bot-field" />{" "}
-        </div>
-        <div data-netlify-recaptcha="true"></div>
         <button type="submit" className={styles.contactMeFormSubmit}>
           Submit
         </button>
