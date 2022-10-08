@@ -7,8 +7,7 @@ export default function ContactMe() {
         className={styles.contactme}
         data-netflify="true"
         method="POST"
-        action="/success"
-        data-netlify-recaptcha="true"
+        //action="/success"
         name="contactme"
       >
         <input name="form-name" value="contactme" type="hidden" />
@@ -22,7 +21,6 @@ export default function ContactMe() {
           name="message"
           required
         ></textarea>
-        <div data-netlify-recaptcha="true"></div>
         <button type="submit" className={styles.contactMeFormSubmit}>
           Submit
         </button>
