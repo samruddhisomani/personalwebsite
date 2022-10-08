@@ -7,7 +7,7 @@ export default function ContactMe() {
         className={styles.contactme}
         data-netflify="true"
         method="POST"
-        //action="/success"
+        action="/success"
         name="contactme"
       >
         <input name="form-name" value="contactme" type="hidden" />
