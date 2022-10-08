@@ -68,10 +68,23 @@
   max-width: 500px;
   flex: 1 1 auto;
   padding: 2rem 0;
+  font-family: "Kalam", sans-serif;
 }
 
 .contactMeFormSubmit {
   max-width: 100px;
+  /* background: linear-gradient(
+    0deg,
+    rgba(60, 53, 208, 1) 0%,
+    rgba(25, 12, 125, 1) 100%
+  ); */
+  background-color: rgba(60, 53, 208, 1);
+  color: #f869f5;
+  border: none;
+  font-family: "Kalam", sans-serif;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
 }
 
 .contactMeFooter {
