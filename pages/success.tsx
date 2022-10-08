@@ -1,9 +1,5 @@
-import styles from "../styles/Home.module.css";
+import OneLiner from "../components/OneLiner";
 
 export default function Success() {
-  return (
-    <h1 className={styles.headerOneOnly}>
-      Form successfully submitted--message sent!
-    </h1>
-  );
+  return <OneLiner line="Form successfully submitted--message sent!" />;
 }

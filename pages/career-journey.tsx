@@ -1,5 +1,7 @@
-import UnderConstruction from "../components/UnderConstruction";
+import styles from "../styles/Home.module.css";
+
+import OneLiner from "../components/OneLiner";
 
 export default function CareerJourney() {
-  return UnderConstruction();
+  return <OneLiner line="Coming soon!" />;
 }

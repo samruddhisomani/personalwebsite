@@ -2,6 +2,9 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import * as React from "react";
+import Navigation from "./Navigation";
+import Header from "./Header";
+import Footer from "./Footer";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -10,41 +13,10 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.wrapper}>
-      <Head>
-        <title>Samruddhi Somani</title>
-        <meta
-          name="description"
-          content="Learn more about my background, skills, and experiences. Or contact me about potential new projects or opportunities."
-        />
-      </Head>
-
-      <header>
-        <h1 className={styles.runner}>
-          <Link href="/"> Samruddhi Somani</Link>
-        </h1>
-      </header>
-      <nav>
-        <ul className={styles.navigation}>
-          <li>
-            <a href="https://www.linkedin.com/in/samruddhisomani/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="/Samruddhi Somani Resume.pdf">Resume</a>
-          </li>
-          <li>
-            <Link href="career-journey">Career Journey</Link>
-          </li>
-          <li>
-            <Link href="skills-and-wins">Skills and Wins</Link>
-          </li>
-        </ul>
-      </nav>
+      <Header />
+      <Navigation />
       {children}
-      <footer>
-        <h1 className={[styles.runner, styles.footer].join(" ")}>
-          <Link href="contact-me">Contact Me!</Link>
-        </h1>
-      </footer>
+      <Footer />
     </div>
   );
 }
